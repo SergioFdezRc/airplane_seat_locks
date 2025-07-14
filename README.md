@@ -37,7 +37,7 @@ The system allows you to:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your_user/airplane_seat_locks.git
+   git clone https://github.com/SergioFdezRc/airplane_seat_locks.git
    cd airplane_seat_locks
    ```
 
