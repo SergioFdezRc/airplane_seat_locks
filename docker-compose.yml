@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  app:
+    build: .
+    container_name: airplane_seat_locks_app
+    depends_on:
+      - redis
+    environment:
+      - PYTHONUNBUFFERED=1
+    tty: true
+    stdin_open: true 
